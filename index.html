@@ -8,9 +8,21 @@
 </head>
 
 <body>
-   <h1>Hello Word!</h1>
-   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia?</p>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, modi? Dicta, iusto?</p>
+   <p>Hellow word</p>
+
+   <script>
+      function getMiddle(s) {
+         //Code goes here!
+         if (s.length % 2 === 0) {
+            let total = s[s.length / 2 - 1] + s[s.length / 2];
+            return total;
+         } else {
+            return s[Math.floor(s.length / 2)];
+         }
+      }
+
+      console.log(getMiddle('testing'));
+   </script>
 </body>
 
 </html>
