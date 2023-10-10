@@ -8,24 +8,16 @@
 </head>
 
 <body>
-   <p>Hellow word</p>
+   <p>Hellow world</p>
 
    <script>
 
-      function positiveSum(arr) {
-         let total = 0;
-         for (i = 0; i <= arr.length; i++) {
-            if (arr[i] > 0) {
-               total += arr[i];
-            }
-         }
-         return total
+      function minMax(arr) {
+         let total = [];
+         total.push(Math.min(...arr));
+         total.push(Math.max(...arr));
+         return total; // fix me!
       }
-
-      console.log(positiveSum([1, -2, 3, 4, 5]))
-
-
-
 
    </script>
 </body>
