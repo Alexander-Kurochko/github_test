@@ -12,14 +12,17 @@
 
    <script>
 
-      function areYouPlayingBanjo(name) {
-         // Implement me
-         if (name[0] === 'R' || name[0] === 'r') {
-            return name + ' plays banjo';
+      function rentalCarCost(d) {
+         if (3 <= d && d < 7) {
+            return (40 * d) - 20;
+         } if (d >= 7) {
+            return (40 * d) - 50;
          } else {
-            return name + ' does not play banjo';
+            return 40 * d;
          }
+         // Your solution here
       }
+      console.log(rentalCarCost(2))
    </script>
 </body>
 
